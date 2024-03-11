@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         //TODO intialize object detector
-
+            classifier = Classifier(assets, "ssd_mobilenet_v1.tflite", "labelmap.txt", 300, true)
 
     }
 
@@ -93,7 +93,30 @@ class MainActivity : AppCompatActivity() {
 
     //TODO pass image to the model and shows the results on screen
     private fun doInference() {
+        var input:Bitmap? = uriToBitmap(image_uri!!)
+        var rotated:Bitmap? = rotateBitmap(input!!)
 
+        var mutable: Bitmap? = rotated?.copy(Bitmap.Config.ARGB_8888,true)
+
+        var canvas: Canvas= Canvas(mutable!!)
+
+        var p : Paint = Paint()
+        p.color =Color.YELLOW
+        p.style = Paint.Style.STROKE
+        p.strokeWidth = 15F
+
+        var p2 : Paint = Paint()
+        p2.color = Color.BLACK
+        p2.textSize = 25F
+
+       var results = classifier?.recognizeImage(rotated!!)
+        for (r in results!!)
+        {
+            Log.d("tryRecognization: ", r.title.toString())
+            canvas.drawRect(r.getLocation(),p)
+            canvas.drawText(r.title.toString(),r.getLocation().left,r.getLocation().top,p2)
+        }
+        innerImage?.setImageBitmap(mutable)
     }
 
     //TODO takes URI of the image and returns bitmap
