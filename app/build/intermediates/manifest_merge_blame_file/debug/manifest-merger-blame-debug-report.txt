@@ -1,0 +1,55 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.imageclassificationkotlin"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:5:5-80
+11-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:6:5-64
+12-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:6:22-62
+13
+14    <application
+14-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:7:5-21:19
+15        android:allowBackup="true"
+15-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:8:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.3.2] C:\Users\Admin\.gradle\caches\transforms-3\5f9092c53fcc354b21ae47d98d9c1e07\transformed\core-1.3.2\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:icon="@mipmap/ic_launcher"
+19-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:9:9-43
+20        android:label="@string/app_name"
+20-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:10:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:11:9-54
+22        android:supportsRtl="true"
+22-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:12:9-35
+23        android:testOnly="true"
+24        android:theme="@style/Theme.ImageClassificationKotlin" >
+24-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:13:9-63
+25        <activity android:name="com.example.imageclassificationkotlin.MainActivity" >
+25-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:14:9-20:20
+25-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:14:19-47
+26            <intent-filter>
+26-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:15:13-19:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:16:17-69
+27-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:16:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:18:17-77
+29-->D:\Machine Learning\Android based apps\ObjectDetectionKotlin using tensorflow lite\app\src\main\AndroidManifest.xml:18:27-74
+30            </intent-filter>
+31        </activity>
+32    </application>
+33
+34</manifest>
